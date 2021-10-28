@@ -33,11 +33,11 @@ public class Student {
         this.group = group;
     }
 
-    public Student(int id, String firstName, String lastName, String patronymic, Faculty faculty, int year, String group) {
+    public Student( int id,String firstName, String lastName, int birthyear, int month, int day, Faculty faculty, int year, String group) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.patronymic = patronymic;
+        this.birthday = LocalDate.of(birthyear, month, day);
         this.faculty = faculty;
         this.year = year;
         this.group = group;
